@@ -95,7 +95,13 @@ Before you get started, ensure you have the following installed:
    - Build the frontend and backend images.
    - Start the application containers in detached mode.
 
-4. Visit the app:
+4. Create the Superuser:
+
+    ```bash
+    make superuser
+    ```
+
+5. Visit the app:
    - Frontend will be available at `http://localhost:5173`.
    - Backend (PocketBase admin) will be available at `http://localhost:8090`.
 
