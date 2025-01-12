@@ -1,0 +1,23 @@
+services:
+  backend:
+    build:
+      context: ./backend
+    env_file:
+      - .env  # Reference the .env file here
+    ports:
+      - "${POCKETBASE_PORT}:${POCKETBASE_PORT}"
+    volumes:
+      - pocketbase_data:/app/pb_data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    env_file:
+      - .env  # Reference the .env file here
+    ports:
+      - "${VITE_PORT}:${VITE_PORT}"
+    restart: unless-stopped
+
+volumes:
+  pocketbase_data:

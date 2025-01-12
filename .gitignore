@@ -1,0 +1,42 @@
+# Environment files
+.env
+
+# Logs
+*.log
+logs
+npm-debug.log*
+
+# Node.js dependencies
+node_modules/
+frontend/vite-vue-app/node_modules/
+
+# Build artifacts
+dist/
+frontend/vite-vue-app/dist/
+
+# Docker
+*.pid
+*.sock
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Temporary files
+*.swp
+*.tmp
+*.bak
+*.old
+*.orig
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.vscode/
+*.idea/
+*.sublime-project
+*.sublime-workspace
+
+# PocketBase data
+backend/pocketbase_data/
+pb_data_backup.tar.gz
