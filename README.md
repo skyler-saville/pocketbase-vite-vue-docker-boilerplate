@@ -97,9 +97,12 @@ Before you get started, ensure you have the following installed:
 
 4. Create the Superuser:
 
-    ```bash
-    make superuser
-    ```
+   ```bash
+   make superuser
+   ```
+
+   This command will:
+    - Create a new Superuser using the variables in the .env file
 
 5. Visit the app:
    - Frontend will be available at `http://localhost:5173`.
